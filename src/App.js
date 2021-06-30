@@ -19,6 +19,7 @@ function App() {
 
   const calculate = () => {
     try {
+      // eslint-disable-next-line
       setResult(eval(result).toString());
     } catch(err) {
       setResult("Error")
@@ -38,7 +39,7 @@ function App() {
           <button name="7" onClick={handleClick}>7</button>
           <button name="8" onClick={handleClick}>8</button>
           <button name="9" onClick={handleClick}>9</button>
-          <button className="highlight" name="x" onClick={handleClick}>x</button>
+          <button className="highlight" name="*" onClick={handleClick}>x</button>
           <button name="4" onClick={handleClick}>4</button>
           <button name="5" onClick={handleClick}>5</button>
           <button name="6" onClick={handleClick}>6</button>
